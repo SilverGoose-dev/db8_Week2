@@ -15,14 +15,12 @@ inventory.Add("Onions", 1.25m);
 inventory.Add("Coffee", 6.99m);
 inventory.Add("Water", 1.99m);
 
-foreach (var pair in inventory)
-{
-    Console.WriteLine($"{pair.Key}\t\t{pair.Value}");
-}
+
 string chosenProduct = "";
 
 do
 {
+    Menu();
     validSearch = false;
     validEntry = false;
     while (!validSearch)
@@ -113,4 +111,14 @@ static bool KeepGoing()
     }
 }
 
-
+void Menu()
+{
+    int itemNumber = 1;
+    Console.WriteLine("Big Al's SuperStore!");
+    Console.WriteLine("====================");
+    foreach (var food in inventory)
+    {
+        Console.WriteLine($"{itemNumber}, {food.Key}: ${food.Value}");
+    }
+    Console.WriteLine("====================");
+}
