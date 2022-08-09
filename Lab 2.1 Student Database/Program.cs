@@ -3,7 +3,9 @@ string[] names = { "John", "Linda", "Kelly", "Fredrik", "Yoshi", "Cortana" };
 string[] hometown = { "Los Angeles", "Toronto", "Sydney", "Berlin", "Tokyo", "Cairo" };
 string[] favoriteFood = { "Tacos", "Poutine", "Vegemite", "Bratwurst", "Sushi", "Shwarma" };
 
-Console.WriteLine("Welcome to the student database!\n");
+Console.WriteLine("*****************************************************");
+Console.WriteLine("**********Welcome to the student database!***********");
+Console.WriteLine("*****************************************************");
 Thread.Sleep(1500);
 
 do
