@@ -81,6 +81,9 @@ foreach (var entry in shoppingCart)
     Console.WriteLine($"***{entry}");
 }
     Console.WriteLine($"Your grand total is ${total}");
+
+
+
 static bool KeepGoing()
 {
     while (true)
@@ -118,7 +121,7 @@ void Menu()
     Console.WriteLine("====================");
     foreach (var food in inventory)
     {
-        Console.WriteLine($"{itemNumber}, {food.Key}: ${food.Value}");
+        Console.WriteLine($"{itemNumber++}. {food.Key}: ${food.Value}");
     }
     Console.WriteLine("====================");
 }
